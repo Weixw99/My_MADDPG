@@ -28,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Target_Tracking" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -160,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task_train" />
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.text" />
+        <item itemvalue="Python.task_train" />
         <item itemvalue="Python.maddpg" />
         <item itemvalue="Python.agent" />
-        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +219,8 @@
       <workItem from="1667483977973" duration="43000" />
       <workItem from="1667484045980" duration="2226000" />
       <workItem from="1667523405388" duration="1744000" />
+      <workItem from="1667531993467" duration="369000" />
+      <workItem from="1667532380632" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="good the code">
       <created>1667459294600</created>
@@ -257,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667484423088</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit init">
+      <created>1667532071918</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667532071918</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +288,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Target_Tracking" />
                       </list>
                     </value>
                   </entry>
@@ -328,5 +342,6 @@
     <SUITE FILE_PATH="coverage/maddpg$text.coverage" NAME="text Coverage Results" MODIFIED="1657782484704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/maddpg$train.coverage" NAME="train Coverage Results" MODIFIED="1657249239500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/master/experiments" />
     <SUITE FILE_PATH="coverage/maddpg$maddpg.coverage" NAME="maddpg Coverage Results" MODIFIED="1657286505381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
+    <SUITE FILE_PATH="coverage/My_MADDPG$task_train.coverage" NAME="task_train Coverage Results" MODIFIED="1667532092429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

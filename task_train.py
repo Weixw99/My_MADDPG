@@ -9,6 +9,7 @@ from agent import make_env, get_trainers
 curr_path = os.path.dirname(os.path.abspath(__file__))  # 当前文件所在绝对路径
 parent_path = os.path.dirname(curr_path)  # 父路径
 parent_path = os.path.dirname(parent_path) + '\\models\\'
+print('Target Surrounded')
 
 
 class Parameters:
