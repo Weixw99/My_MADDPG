@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82b87696-91e9-4c16-a7a3-414d014afa49" name="变更" comment="commit init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="82b87696-91e9-4c16-a7a3-414d014afa49" name="变更" comment="add .ignore">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ASUS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maddpg.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Target_Surrounded" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -160,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task_train" />
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.text" />
+        <item itemvalue="Python.task_train" />
         <item itemvalue="Python.maddpg" />
         <item itemvalue="Python.agent" />
-        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +226,7 @@
       <workItem from="1667483977973" duration="43000" />
       <workItem from="1667484045980" duration="2226000" />
       <workItem from="1667523405388" duration="1744000" />
+      <workItem from="1668046978362" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="good the code">
       <created>1667459294600</created>
@@ -257,7 +270,35 @@
       <option name="project" value="LOCAL" />
       <updated>1667484423088</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add .ignore">
+      <created>1668047062376</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668047062376</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add .ignore">
+      <created>1668047124230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668047124230</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add .ignore">
+      <created>1668047174073</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668047174073</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add .ignore">
+      <created>1668047227611</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668047227611</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +315,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Target_Tracking" />
                       </list>
                     </value>
                   </entry>
@@ -292,7 +333,8 @@
     <MESSAGE value="add 2222" />
     <MESSAGE value="add 33333" />
     <MESSAGE value="commit init" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit init" />
+    <MESSAGE value="add .ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,5 +370,6 @@
     <SUITE FILE_PATH="coverage/maddpg$text.coverage" NAME="text Coverage Results" MODIFIED="1657782484704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/maddpg$train.coverage" NAME="train Coverage Results" MODIFIED="1657249239500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/master/experiments" />
     <SUITE FILE_PATH="coverage/maddpg$maddpg.coverage" NAME="maddpg Coverage Results" MODIFIED="1657286505381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trainer" />
+    <SUITE FILE_PATH="coverage/My_MADDPG$task_train.coverage" NAME="task_train Coverage Results" MODIFIED="1667532092429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
