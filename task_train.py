@@ -7,21 +7,20 @@ import common.utils as util
 from agent import make_env, get_trainers
 
 curr_path = os.path.dirname(os.path.abspath(__file__))  # 当前文件所在绝对路径
-parent_path = os.path.dirname(curr_path)  # 父路径
-parent_path = os.path.dirname(parent_path) + '\\models\\'
+model_path = curr_path + '\\models\\'
 
 
 class Parameters:
     def __init__(self):
         # Environment
         self.scenario = 'simple_v0'
-        self.algo_name = 'maddpg'  # 算法名称
+        self.algo_name = 'ma-ddpg'  # 算法名称
         self.device = 'cuda' if tf.test.is_gpu_available() else 'cpu'  # 检测GPU
         self.episodes_num = 6000  # 训练的回合数
         self.episodes_len = 300  # 每回合步数
         self.adversaries_num = 50  # 对手的数量
-        self.good_policy = 'maddpg'
-        self.adv_policy = 'maddpg'
+        self.good_policy = 'ma-ddpg'
+        self.adv_policy = 'ma-ddpg'
 
         # Core training parameters
         self.lr = 1e-2  # learning rate for Adam optimizer
@@ -31,7 +30,7 @@ class Parameters:
 
         # Checkpointing
         self.exp_name = ''  # name of the experiment
-        self.save_dir = parent_path  # directory in which training state and model should be saved
+        self.save_dir = model_path  # directory in which training state and model should be saved
         self.save_rate = 1  # save model once every time this many episodes are completed
         self.load_dir = ''  # directory in which training state and model are loaded
 
