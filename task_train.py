@@ -7,7 +7,7 @@ import common.utils as util
 from agent import make_env, get_trainers
 
 curr_path = os.path.dirname(os.path.abspath(__file__))  # 当前文件所在绝对路径
-model_path = curr_path + '\\models\\'
+model_path = curr_path + '/models/'
 
 
 class Parameters:
@@ -31,7 +31,7 @@ class Parameters:
         # Checkpointing
         self.exp_name = ''  # name of the experiment
         self.save_dir = model_path  # directory in which training state and model should be saved
-        self.save_rate = 1  # save model once every time this many episodes are completed
+        self.save_rate = 100  # save model once every time this many episodes are completed
         self.load_dir = ''  # directory in which training state and model are loaded
 
         # Evaluation
