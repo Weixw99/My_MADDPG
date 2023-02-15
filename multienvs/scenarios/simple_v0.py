@@ -1,6 +1,7 @@
 import numpy as np
 from multienvs.core_v0 import World, Agent, Landmark
 from multienvs.scenario import BaseScenario
+# 用于目标包围的环境代码
 
 
 class Scenario(BaseScenario):
