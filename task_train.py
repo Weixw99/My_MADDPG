@@ -13,34 +13,34 @@ model_path = curr_path + '/models/'
 class Parameters:
     def __init__(self):
         # Environment
-        self.scenario = 'simple_v0'
+        self.scenario = 'simple_v0'  # 定义要使用 MPE 中的哪个环境
         self.algo_name = 'ma-ddpg'  # 算法名称
         self.device = 'cuda' if tf.test.is_gpu_available() else 'cpu'  # 检测GPU
         self.episodes_num = 6000  # 训练的回合数
         self.episodes_len = 300  # 每回合步数
-        self.adversaries_num = 50  # 对手的数量
-        self.good_policy = 'ma-ddpg'
-        self.adv_policy = 'ma-ddpg'
+        self.adversaries_num = 0  # 环境中的对手数量
+        self.good_policy = 'ma-ddpg'  # 用于环境中“良好”（非对手）策略的算法
+        self.adv_policy = 'ma-ddpg'  # 用于环境中对手策略的算法
 
         # Core training parameters
-        self.lr = 1e-2  # learning rate for Adam optimizer
+        self.lr = 1e-2  # 学习率
         self.gamma = 0.95  # 折扣因子
-        self.batch_size = 1024  # number of episodes to optimize at the same time
-        self.units_num = 64  # number of units in the mlp
+        self.batch_size = 1024  # 批量大小
+        self.units_num = 64  # MLP 中的单元数
 
         # Checkpointing
-        self.exp_name = ''  # name of the experiment
-        self.save_dir = model_path  # directory in which training state and model should be saved
-        self.save_rate = 100  # save model once every time this many episodes are completed
-        self.load_dir = ''  # directory in which training state and model are loaded
+        self.exp_name = ''  # 实验名称，用作保存所有结果的文件名
+        self.save_dir = model_path  # 保存中间训练结果和模型的目录
+        self.save_rate = 100  # 每次完成此数量的训练时都会保存模型
+        self.load_dir = ''  # 从中加载训练状态和模型的目录
 
         # Evaluation
-        self.restore = False
-        self.display = False
-        self.benchmark = False
-        self.benchmark_iter = 100000  # number of iterations run for benchmarking
-        self.benchmark_dir = './benchmark_files/'  # directory where benchmark data is saved
-        self.plots_dir = './learning_curves/'  # directory where plot data is saved
+        self.restore = False  # 恢复存储在load-dir（或save-dir如果未load-dir 提供）中的先前训练状态，并继续训练
+        self.display = False  # 在屏幕上显示存储在load-dir（或save-dir如果没有load-dir 提供）中的训练策略，但不继续训练
+        self.benchmark = False  # 对保存的策略运行基准评估，将结果保存到benchmark-dir文件夹
+        self.benchmark_iter = 100000  # 运行基准测试的迭代次数
+        self.benchmark_dir = './benchmark_files/'  # 保存基准数据的目录
+        self.plots_dir = './learning_curves/'  # 保存训练曲线的目录
 
 
 def train(parameters):

@@ -13,7 +13,7 @@ def make_env(scenario_name, benchmark=False):
     # create world
     world = scenario.make_world()  # 创建agent和landmark赋予各种类
     # create multi-agent environment
-    if benchmark:
+    if benchmark:  # 是否要生成基准测试数据(通常只在评估时进行)
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data)
     else:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)
