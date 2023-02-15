@@ -14,10 +14,11 @@ class EntityState(object):
 # state of agents (including communication and internal/mental state)
 class AgentState(object):
     def __init__(self):
+        super(AgentState, self).__init__()
         # physical position
-        self.p_pos = None
+        # self.p_pos = None
         # physical velocity
-        self.p_vel = None
+        # self.p_vel = None
         self.c = None
 
 
@@ -185,16 +186,6 @@ class World(object):
                     entity.state.p_vel += [-0.04, 0]
                 elif entity.state.p_pos[0] <= 0.95 and entity.state.p_vel[0] < 0:
                     entity.state.p_vel += [-0.04, 0]
-            if i == 4:
-                if entity.state.p_pos[0] < -0.8:
-                    entity.state.p_vel += [0.014, 0]
-                elif -0.8 <= entity.state.p_pos[0] <= 0.65 and entity.state.p_vel[0] > 0:
-                    entity.state.p_vel += [0.014, 0]
-
-                elif entity.state.p_pos[0] > 0.65:
-                    entity.state.p_vel += [-0.014, 0]
-                elif entity.state.p_pos[0] <= 0.65 and entity.state.p_vel[0] < 0:
-                    entity.state.p_vel += [-0.014, 0]
             else:
                 if p_force[i] is not None:
                     entity.state.p_vel += (p_force[i] / entity.mass) * self.dt
