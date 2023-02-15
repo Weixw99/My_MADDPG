@@ -1,2 +1,2 @@
-model_checkpoint_path: "/home/wxw/Project/My_MADDPG\\models\\"
-all_model_checkpoint_paths: "/home/wxw/Project/My_MADDPG\\models\\"
+model_checkpoint_path: "/home/wxw/Project/My_MADDPG/models/"
+all_model_checkpoint_paths: "/home/wxw/Project/My_MADDPG/models/"
